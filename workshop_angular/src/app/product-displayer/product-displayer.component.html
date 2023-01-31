@@ -1,0 +1,6 @@
+<li *ngFor="let item of products; index as i">
+    <div *ngIf="item.stock > 0" (click)="item.stock = decrementStock(item.stock)">
+        {{item.name}}: {{item.price}}$, Stock restant: {{item.stock}}
+    </div>
+</li>
+
